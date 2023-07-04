@@ -18,6 +18,10 @@ export function HomeScreen() {
     href: '/user/nate',
   })
 
+  const linkProps2 = useLink({
+    href: '/signin',
+  })
+
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
@@ -47,6 +51,10 @@ export function HomeScreen() {
 
       <XStack>
         <Button {...linkProps}>Link to user</Button>
+      </XStack>
+
+      <XStack>
+        <Button {...linkProps2}>Link to sign in</Button>
       </XStack>
 
       <SheetDemo />
